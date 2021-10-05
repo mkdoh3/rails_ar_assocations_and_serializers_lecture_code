@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :update, :destroy]
 
+
   def index
     if params[:user_id]
       @posts = Post.where(user_id: params[:user_id])
