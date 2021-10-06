@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    render json: @user, include: :posts, status: :ok
+    render json: @user, status: :ok
   end
 
   def create
